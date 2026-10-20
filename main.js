@@ -262,3 +262,104 @@ console.log(`my test grade is a ${mygrade}.`);
 // ============================================*****************************====================================== 
 
 // User Input
+
+alert("welcome");
+let myboolean=confirm("ok=== true\ncancel ===False");
+console.log(myboolean);
+
+// nullis colesikin operator used
+let name =prompt("please enter your name");
+if (name.lenght){
+console.log(name ?? "you didn't enter your name");
+}
+else{
+    console.log("you didn't enter your name");
+}
+
+
+let name =prompt("please enter your name");
+if (name){
+    console.log(name.length); //lenght we can check the length
+    console.log(name.trim().length); // trim were used to delete the white space
+    console.log(name.trim());
+}
+else{
+    console.log("you didn't enter your name");
+}
+
+// ============================================*****************************======================================
+
+// LOOPS
+
+// while loop
+let mynumber=0;
+while(mynumber<50){
+    mynumber+=2; //post increment ++
+    console.log(mynumber);
+}
+// Dont create endless loop
+
+// do while loop
+
+let mynumber=50;
+while(mynumber<50){
+    mynumber+=2; //post increment ++
+    console.log(mynumber);
+}
+do{
+    console.log(mynumber);
+} while (mynumber<50);
+
+// For Loop
+
+for(let i = 1; i<=10;){
+    console.log(i);
+    i++;
+}
+
+let i = 1;
+ for(;i<=10;){
+    console.log(i);
+    i++;
+ }
+
+ for(let i = 1;i<=10;  i++){
+    console.log(i);
+ }
+// Examples
+
+let name="Rithik";
+for(let i=0; i<= name.length; i++){
+    console.log(name.charAt(i));
+}
+
+// loop breaking and continue
+
+let myname="Rithik"
+let counter =0;
+let myletter;
+while (true){
+    myletter= myname[counter];
+    console.log(myletter);
+    if(myletter==="h")
+        break;
+    counter++;
+}
+
+let myname="Rithik"
+let counter =0;
+let myletter;
+while (counter<=3){
+    myletter= myname[counter];
+    console.log(myletter);
+    if(counter===1){
+        counter+=2
+        continue;
+    }
+    if(myletter==="h")
+        break;
+    counter++;
+}
+console.log(counter);
+
+// ============================================*****************************======================================
